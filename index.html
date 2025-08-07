@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Reminder App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="header">
+                <h1>Medicine Reminder App</h1>
+                <div class="time" id="currentTime">
+                    <!-- Time will be displayed here -->
+                </div>
+            </div>
+            <div class="description">
+                <p>Set reminders for your medicines and never miss a dose!</p>
+            <div class="reminder-input-container">
+                <div class="medicine-name">
+                    <label for="medicineName">Medicine Name:</label>
+                    <input type="text" id="medicineName" placeholder="Enter medicine name">
+                </div>
+                <div class="time-reminder">
+                    <label for="reminderTime">Reminder Time:</label>
+                    <input type="time" id="reminderTime">
+                </div>
+                <button class="add-reminder-btn" onclick="addReminder()">Add Reminder</button>
+            </div>
+            <div class="reminder-container">
+                <ul class="reminder-list" id="reminders">
+                    <!-- Reminders will be added here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
